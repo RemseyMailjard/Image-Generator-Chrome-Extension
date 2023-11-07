@@ -21,34 +21,34 @@ async function generateImage() {
 
   // Check if the prompt is empty and exit if so
   if (!currentPrompt) {
-      alert("Please enter a prompt.");
-      return;
+    alert("Please enter a prompt.");
+    return;
   }
 
   // Get additional options
-  const selectedSize = document.getElementById('imageSize').value;
-  const isHighQuality = document.getElementById('highQuality').checked;
-  const styleVivid = document.getElementById('styleVivid').checked;
-  const style = styleVivid ? 'vivid' : 'natural';
+  const selectedSize = document.getElementById("imageSize").value;
+  const isHighQuality = document.getElementById("highQuality").checked;
+  const styleVivid = document.getElementById("styleVivid").checked;
+  const style = styleVivid ? "vivid" : "natural";
 
   // Retrieve the API key from storage
   chrome.storage.local.get("apiKey", async function (data) {
-      const openaiApiKey = data.apiKey;
+    const openaiApiKey = data.apiKey;
 
-      // If no API key is found, alert the user
-      if (!openaiApiKey) {
-          alert("Please set your OpenAI API key in the extension options.");
-          return;
-      }
+    // If no API key is found, alert the user
+    if (!openaiApiKey) {
+      alert("Please set your OpenAI API key in the extension options.");
+      return;
+    }
 
-      const requestBody = {
-          model: "dall-e-3",
-          prompt: currentPrompt,
-          quality: isHighQuality ? "hd" : "standard",
-          n: 1,
-          size: selectedSize,
-          style: style
-      };
+    const requestBody = {
+      model: "dall-e-3",
+      prompt: currentPrompt,
+      quality: isHighQuality ? "hd" : "standard",
+      n: 1,
+      size: selectedSize,
+      style: style,
+    };
 
     try {
       // Display the loading message before starting the fetch operation
