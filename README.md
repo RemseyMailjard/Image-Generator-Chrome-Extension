@@ -1,6 +1,5 @@
 # Dalle 3 Image Generator Chrome Extension
 
-![Dalle 3 - Image Generator Chrome Extension](https://github.com/RemseyMailjard/Dalle-3-Image-Generator---Chrome-Extension/assets/35072380/18d09d2c-0274-4676-adb0-f0bed6dc01b2
 
 ![Dalle-3 Image Generator Demo](https://github.com/RemseyMailjard/Dalle-3-Image-Generator---Chrome-Extension/assets/35072380/18d09d2c-0274-4676-adb0-f0bed6dc01b2)
 
