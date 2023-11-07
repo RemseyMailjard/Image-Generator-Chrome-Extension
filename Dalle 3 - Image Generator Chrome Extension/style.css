@@ -1,0 +1,108 @@
+/* Define CSS variables for consistency and ease of maintenance */
+:root {
+    --sans-serif: Arial, sans-serif;
+    --b100: #333; /* Adjust color as needed */
+    --primary-color: #10a37f;
+    --padding-vertical: 0.75rem; /* 12px */
+    --padding-horizontal: 1rem; /* 16px */
+    --margin-bottom: 1.5rem; /* 24px */
+    --border-radius: 0.25rem; /* 4px */
+    --input-background-color: yellow;
+    --input-border-color: var(--primary-color);
+    --input-outline-color: var(--primary-color);
+    --button-bg-color: var(--primary-color);
+    --button-text-color: #fff;
+  }
+  
+  
+
+/* Ensure that your custom styles do not overflow the narrow sidebar */
+.container {
+  padding: 0.5rem;
+  width: auto;
+}
+#imageResult img {
+  max-width: 100%; /* Ensure images do not overflow the sidebar */
+  height: auto;
+}
+body, html {
+margin: 0;
+padding: 0;
+height: 100%;
+font-family: 'Poppins', sans-serif;
+/*font-family: IBM Plex Sans Devanagari,sans-serif!important */
+}
+/* To specifically use the 300 weight of Poppins */
+.light-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* To specifically use the 500 weight of Poppins */
+.medium-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* Using Trocchi */
+.heading {
+    font-family: 'Trocchi', serif;
+}
+
+/* Using Gudea */
+.paragraph {
+    font-family: 'Gudea', sans-serif;
+}
+
+/* To specifically use the 700 weight of Gudea */
+.bold-text {
+    font-family: 'Gudea', sans-serif;
+    font-weight: 700;
+}
+  /* Input styles */
+  .text-input {
+    background-clip: padding-box;
+    background-color: var(--input-background-color);
+    box-sizing: border-box;
+    color: var(--b100);
+    display: block; /* Full-width inputs are typical in sidebars */
+    font-family: var(--sans-serif);
+    font-size: 1rem; /* Adjusted for better scaling */
+    font-weight: 400;
+    line-height: 1.5em; /* Line height adjusted for better readability */
+    width: 100%; /* Full-width to use available space */
+    padding: var(--padding-vertical) var(--padding-horizontal);
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin-bottom);
+    outline-color: var(--input-outline-color);
+  }
+  
+  /* Button styles */
+  .myButton {
+    display: block; /* Full-width button for better mobile experience */
+    width: 100%; /* Ensures the button stretches to full width of the sidebar */
+    padding: var(--padding-vertical) 0; /* Padding adjusted for better button height */
+    color: var(--button-text-color);
+    background-color: var(--button-bg-color);
+    border: none;
+    border-radius: var(--border-radius);
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: var(--margin-bottom); /* Provide some space below the button */
+  }
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
