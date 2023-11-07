@@ -1,10 +1,13 @@
 # Dalle 3 Image Generator Chrome Extension
 
+![Dalle 3 - Image Generator Chrome Extension](https://github.com/RemseyMailjard/Dalle-3-Image-Generator---Chrome-Extension/assets/35072380/18d09d2c-0274-4676-adb0-f0bed6dc01b2
+
 Transform your creative ideas into stunning visuals with the Dalle 3 Image Generator Chrome Extension. Leveraging the power of OpenAI's Dalle-3 API, this tool allows you to generate detailed images up to 1792x1024 resolution in both landscape and portrait formats. It's user-friendly, efficient, and free to use.
 
 ## Prerequisites
 
-Before you install the extension, you'll need to obtain an API key from OpenAI:
+Before you install the )
+extension, you'll need to obtain an API key from OpenAI:
 
 1. **Sign up or Log in to OpenAI**: Visit [OpenAI's API platform](https://platform.openai.com/signup) to create an account or log in.
 2. **Generate API Key**: Navigate to the API section in your OpenAI account dashboard and generate a new API key.
