@@ -85,19 +85,47 @@ function displayImage(imageResult) {
   if (imageResult.data && imageResult.data.length > 0) {
     const imageUrl = imageResult.data[0].url;
 
-    // Update the innerHTML of the imageResult with the image and download link
+    // Store the image URL in localStorage
+    localStorage.setItem('storedImage', imageUrl);
+
+    // Update the innerHTML of the imageResult with the image, download link, and clear button
     imageContainer.innerHTML = `
       <img id="generatedImage" src="${imageUrl}" alt="Generated Image" style="max-width: 100%;">
       <a id="downloadLink" href="${imageUrl}" download="generated_image.png" class="btn btn-success btn-sm mt-2">Download Image</a>
+      <button id="clearImageButton" class="btn btn-danger btn-sm mt-2">Clear Image</button>
     `;
 
-    // Display the image and the download link
+    // Display the image, the download link, and the clear button
     document.getElementById("generatedImage").style.display = "block";
     document.getElementById("downloadLink").style.display = "block";
+    document.getElementById("clearImageButton").style.display = "block";
+
+    // Bind the click event to the clear button
+    document.getElementById("clearImageButton").onclick = clearImage;
   } else {
     imageContainer.innerHTML = "No image found.";
   }
 }
+function clearImage() {
+  // Clear the image from localStorage
+  localStorage.removeItem('storedImage');
+
+  // Clear the image from the display
+  const imageContainer = document.getElementById("imageResult");
+  imageContainer.innerHTML = "";
+}
+
+
+// Call this function when the sidebar is opened or refreshed
+function retrieveStoredImage() {
+  const storedImageUrl = localStorage.getItem("storedImage");
+  if (storedImageUrl) {
+    displayImage({ data: [{ url: storedImageUrl }] });
+  }
+}
+
+// Add this line at the beginning of your sidebar script to check for stored images when the extension is opened
+retrieveStoredImage();
 
 // Example trigger, you may want to bind this to a button click or form submission
 // generateImage();
