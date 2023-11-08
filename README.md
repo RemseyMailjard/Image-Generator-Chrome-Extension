@@ -23,7 +23,7 @@ Follow these simple steps to install the Dalle 3 Image Generator Chrome Extensio
 1. **Download the Extension**: Click on the download link provided in the comments section to download the `.zip` file containing the extension.
 
 2. **Unpack the Extension**: 
-   - Navigate to the downloaded `.zip` file.
+   - Navigate to the downloaded `.zip` file. (https://github.com/RemseyMailjard/Dalle-3-Image-Generator-Chrome-Extension/archive/refs/heads/main.zip)
    - Right-click on the file and select "Extract All...".
    - Choose a destination folder where you want to extract the files and click "Extract".
 
