@@ -46,9 +46,8 @@ Follow these simple steps to install the Dalle 3 Image Generator Chrome Extensio
 6. **Enjoy Generating Images**:
    - With the extension active, simply click the icon and start entering prompts to generate images.
 
-## Demo Video
-
-Check out this [YouTube demo video](https://www.youtube.com/watch?v=INSERT_VIDEO_ID_HERE) to see the extension in action.
+## instruction video of installing the video 
+Check out this [YouTube demo video](https://www.youtube.com/watch?v=7UX75_Myp8w) to see the extension in action.
 
 ## Usage Tips
 
